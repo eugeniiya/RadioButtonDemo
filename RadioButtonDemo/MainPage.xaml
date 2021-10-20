@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+ x:Class="RadioButtonDemo.MainPage"
+ BackgroundColor="LightBlue">
+    <StackLayout Margin="10">
+        <Label BindingContext="Работа с RadioButton"
+ TextColor="Blue"
+ FontSize="50"
+ FontAttributes="Bold"
+ HorizontalOptions="Center" />
+        <Label BindingContext="Какое Ваше любимое аниме?"
+ FontAttributes="Bold"
+ FontSize="20" TextColor="#2A8FA5"/>
+        <RadioButton BindingContext="Берсерк"
+ FontSize="16" FontAttributes="Bold"
+ GroupName="anime"
+ CheckedChanged="OnColorChanged" />
+        <RadioButton BindingContext="Евангелион"
+ FontSize="16" FontAttributes="Bold"
+ GroupName="anime"
+ CheckedChanged="OnColorChanged" />
+        <RadioButton BindingContext="Дргуое..."
+ FontSize="16" FontAttributes="Bold"
+ GroupName="anime"
+ CheckedChanged="OnColorChanged" />
+        <Label x:Name="colorLabel"
+ FontSize="20" FontAttributes="Bold"
+ TextColor="#2A8FA5"
+ Text="Ваше любимое аниме:" />
+        <Label BindingContext="Какой Ваш любимый овощ?"
+ FontAttributes="Bold"
+ FontSize="20" TextColor="#5E0EF2"/>
+        <RadioButton BindingContext="Морковь"
+ FontSize="16" FontAttributes="Bold"
+ GroupName="vegs"
+ CheckedChanged="OnVegChanged" />
+        <RadioButton BindingContext="Болгарский перец"
+ FontSize="16" FontAttributes="Bold"
+ GroupName="vegs"
+ CheckedChanged="OnVegChanged" />
+        <RadioButton BindingContext="Кабачок"
+ FontSize="16" FontAttributes="Bold"
+ GroupName="vegs"
+ CheckedChanged="OnVegChanged" />
+        <RadioButton BindingContext="Баклажан"
+ FontSize="16" FontAttributes="Bold"
+ GroupName="vegs"
+ CheckedChanged="OnVegChanged" />
+        <RadioButton BindingContext="Другой..."
+ FontSize="16" FontAttributes="Bold"
+ GroupName="vegs"
+ CheckedChanged="OnVegChanged" />
+        <Label x:Name="vegLabel"
+ FontAttributes="Bold"
+ FontSize="20" TextColor="#5E0EF2"
+ Text="Ваш любимый овощ:" />
+    </StackLayout>
+</ContentPage>
